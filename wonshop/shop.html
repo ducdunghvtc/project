@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="shortcut icon" type="image/png" href="./images/logo.svg"/>
+    <meta name="og:type" content="website"/>
+    <meta name="twitter:card" content="photo"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"/>
+    <link rel="stylesheet" type="text/css" href="css/home.css"/>
+    <link rel="stylesheet" type="text/css" href="css/shop.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./js/owlcarousel/assets/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="./js/owlcarousel/assets/owl.theme.default.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"/>
+    <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.deepsel.com/A-plugin/jquery-ui.min.css.gz"/>
+    <link rel="stylesheet"
+          href="https://cdn.rawgit.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+          integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>Shop</title>
+</head>
+
+<body>
+<header class="bg-white sticky-top w-100">
+    <div class="container logo-header">
+        <div class="row">
+            <nav class="navbar navbar-expand-xl text-white w-100 justify-content-between ml-md-auto p-0">
+                <a href="./index.html" class="navbar-brand text-white d-flex align-items-center"><img
+                        src="./images/logo.svg" alt=""/>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="bx bx-menu-alt-right"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarHeader">
+                    <ul deepsel-menu class=" h-100 navbar-nav ml-auto align-items-start align-items-xl-center">
+                        <li deepsel-menu-item class="nav-item home active h-100">
+                            <a deepsel-menu-item-link class="nav-link h-100 d-flex"
+                               style="font-weight: 600;color:#B55E36" href="./index.html">
+                                <span deepsel-menu-item-text>Home</span>
+                            </a>
+                        </li>
+                        <li deepsel-menu-item class="nav-item shop-menu dropdown h-100">
+                            <a deepsel-menu-item-link class="nav-link h-100 d-flex"
+                               onclick="location.href='./shop.html'" href="" id="navbarDropdown" role="button"
+                               data-toggle="dropdown">
+                                <span deepsel-menu-item-text>Shop</span>
+                                <i deepsel-menu-item-icon class="bi bi-chevron-down ml-1"></i>
+                            </a>
+                            <div deepsel-menu-item-child class="dropdown-menu">
+                                <ul class="navbar-nav flex-column">JACKETS
+                                    <li>
+                                        <a class="dropdown-item" href="">Parkas</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="">Work Jackets</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="">Trench Coats</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="">Casual</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="">Sale</a>
+                                    </li>
+                                </ul>
+                                <ul class="navbar-nav flex-column">SHIRTS
+                                    <li>
+                                        <a class="dropdown-item" href="">Knits</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="">Mid-Layers</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="">Standard</a>
+                                    </li>
+                                    <li class="dropdown-submenu position-relative">
+                                        <a class="dropdown-item" href="">Granddad
+                                            <i class="bi bi-chevron-down ml-1"></i>
+                                        </a>
+                                        <ul class="navbar-nav dropdown-small position-absolute d-none"
+                                            style="padding-left:1.2rem;list-style: initial;">
+                                            <li>
+                                                <a class="dropdown-item" href="">Shirts 1</a>
+                                            </li>
+                                            <li class="dropdown-submenu">
+                                                <a class="dropdown-item" href="">Shirts 2
+                                                    <i class="bi bi-chevron-down ml-1"></i>
+                                                </a>
+                                                <ul class="navbar-nav dropdown-small position-absolute d-none">
+                                                    <li>
+                                                        <a class="dropdown-item" href="">Demi</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="">T-Shirts</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class="navbar-nav flex-column">TROUSERS
+                                    <li>
+                                        <a class="dropdown-item" href="">Slim</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="">Proper</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="">Standard</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="">Shorts</a>
+                                    </li>
+                                    <li>
+                                </ul>
+                                <ul class="navbar-nav flex-column">SHORTS
+                                    <li>
+                                        <a class="dropdown-item" href="">Gloves</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="">Opticals</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="">Scarves</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="">Hats</a>
+                                    </li>
+                                </ul>
+                                <ul class="navbar-nav flex-column">CATEGORIES
+                                    <li class="mt-2"><img src="./images/Rectangle 36.png" alt=""></li>
+                                    <li class="mt-2"><a class="dropdown-item" href="">Men’s Essentials</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item page-menu dropdown h-100">
+                            <a class="nav-link h-100 d-flex" onclick="location.href='./shop.html'" href="">
+                                Page
+                                <i class="bi bi-chevron-down ml-1"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item blog-menu h-100">
+                            <a class="nav-link  h-100 d-flex" href="./blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item contact-menu h-100">
+                            <a class="nav-link h-100 d-flex" href="./contact.html">Contact us</a>
+                        </li>
+                    </ul>
+                    <ul class="h-100 navbar-nav align-items-start align-items-xl-center">
+                        <li class="nav-item h-100 dropdown user-menu">
+                            <a class="nav-link h-100 d-flex" type="button" id="dropdownUser" data-toggle="dropdown"
+                               aria-haspopup="true" aria-expanded="false" href="#">
+                                <i class="bi bi-person"></i>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownUser">
+                                <li>
+                                    <a class="dropdown-item" href="">LOGIN</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="">SIGN UP</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="h-100 navbar-nav align-items-start align-items-xl-center">
+                        <li class="nav-item h-100 dropdown cart-menu">
+                            <a class="nav-link h-100 d-flex" type="button" id="dropdownCart" data-toggle="dropdown"
+                               aria-haspopup="true" aria-expanded="false" href="./shop.html">
+                                <i class="bi bi-cart position-relative" style="font-size: 19px;">
+                          <span class="badge d-flex position-absolute bg-main">0
+                          </span>
+                                </i>
+                            </a>
+                            <div deepsel-multi-product-cart class="cart dropdown-menu container"
+                                 aria-labelledby="dropdownCart">
+                                <h2>Your cart</h2>
+                                <center>
+                                    <hr style="width:88%">
+                                </center>
+                                <div deepsel-single-product class="product row">
+                                    <div deepsel-product-url class="product-image col-xl-4">
+                                        <img deepsel-product-image src="./images/Rectangle 26.png">
+                                    </div>
+                                    <div class="product-details col-xl-8">
+                                        <h3 deepsel-product-name class="product-name">Trucker Jacket Denmin</h3>
+                                        <label deepsel-product-cart-qty class="product-quantity">Qty: 1</label>
+                                        <div class="d-flex justify-content-between align-items-end">
+                                            <span deepsel-product-price class="product-price">$100.00</span>
+                                            <a deepsel-remove-from-cart class="remove-product">
+                                                Remove
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <center>
+                                    <hr style="width: 88%;">
+                                </center>
+                                <div deepsel-single-product class="product row">
+                                    <div deepsel-product-url class="product-image col-xl-4">
+                                        <img deepsel-product-image src="./images/Rectangle 27.png">
+                                    </div>
+                                    <div class="product-details col-xl-8">
+                                        <h3 deepsel-product-name class="product-name">Nike X Off - White</h3>
+                                        <label deepsel-product-cart-qty class="product-quantity">Qty: 1</label>
+                                        <div class="d-flex justify-content-between align-items-end">
+                                            <span deepsel-product-price class="product-price">$100.00</span>
+                                            <a deepsel-remove-from-cart class="remove-product">
+                                                Remove
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <center>
+                                    <hr style="width:88%">
+                                </center>
+                                <div class="totals">
+                                    <div class="totals-item">
+                                        <label>Subtotal</label>
+                                        <span deepsel-product-cart-subtotal class="totals-value" id="cart-subtotal">$200.00</span>
+                                    </div>
+                                    <!--                          <div class="totals-item">-->
+                                    <!--                            <label>Delivery</label>-->
+                                    <!--                            <div class="totals-value" id="cart-shipping">$0.00</div>-->
+                                    <!--                          </div>-->
+                                    <div class="totals-item">
+                                        <label>Discount</label>
+                                        <div deepsel-product-cart-discount class="totals-value" id="cart-discount">
+                                            -0%
+                                        </div>
+                                    </div>
+                                    <center>
+                                        <hr style="width:95%">
+                                    </center>
+                                    <div class="totals-item totals-money">
+                                        <label>Total</label>
+                                        <div deepsel-product-cart-total class="totals-value" id="cart-total">
+                                            $200.00
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="checkout button-group d-flex justify-content-between">
+                                    <button onclick="location.href='shop/cart'" type="button"
+                                            class="btn btn-view btn-outline-warning">VIEW CART
+                                    </button>
+                                    <button onclick="location.href='shop/payment'" type="button"
+                                            class="btn btn-checkout btn-outline-warning">CHECK OUT
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="h-100 navbar-nav align-items-start align-items-xl-center">
+                        <li class="h-100 nav-item d-none d-xl-block search-menu">
+                            <a type="button" href="" class="h-100 nav-link" id="search">
+                                <i class="bi bi-search"></i>
+                            </a>
+                            <div class="search-form p-0 d-none dropdown-menu " id="search-drop">
+                                <div class="input-group">
+                                    <input deepsel-search type="text" onkeyup="inputFunc()" id="myInput"
+                                           class="form-control" placeholder="Search for something"
+                                           aria-label="Example text with button addon"
+                                           aria-describedby="search"/>
+                                    <button class="btn input-group-text" id="remove">
+                                        <i class="bi bi-x"></i>
+                                    </button>
+                                </div>
+                                <ul class="list-group" id="myList">
+                                    <li class="list-group-item">Contact</li>
+                                    <li class="list-group-item">short</li>
+                                    <li class="list-group-item">jean</li>
+                                    <li class="list-group-item">hat 2021</li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                    <div deepsel-lang-switcher class="currency-menu d-flex align-items-center dropdown">
+                        <a deepsel-lang-current id="currencyDropdown" data-toggle="dropdown" aria-haspopup="false"
+                           aria-expanded="false" class="nav-link mr-2"
+                           style="color: #000000;" href="">
+                            USD <i class="bi bi-caret-down-fill" style="font-size: 10px;"></i>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="currencyDropdown">
+                            <center deepsel-lang-option><a deepsel-lang-text class="dropdown-item" href="#">VND</a>
+                            </center>
+                            <center deepsel-lang-option><a deepsel-lang-text class="dropdown-item" href="#">NDT</a>
+                            </center>
+                        </div>
+                    </div>
+                    <div class="container-fluid input-group search-form-mobile p-0 d-flex d-xl-none">
+                        <div class="input-group-prepend">
+                            <button class="btn" id="search-mobile">
+                                <i class="bi bi-search"></i>
+                            </button>
+                        </div>
+                        <input deepsel-search type="text" class="form-control" placeholder="Search"
+                               aria-label="Example text with button addon" aria-describedby="search"/>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+<div class="container shop-container">
+    <div class="row">
+        <div class="col-12">
+            <h2>All our products</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xl-3 col-lg-4 side-bar">
+            <div class="categories">
+                <h6 style="margin:0">Product categories</h6>
+                <ul class="navbar-nav flex-column cate-menu">
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Bags</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Boot</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Clothing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Exclusive bag</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Home 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Home 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Home 2-2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Home 3</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Home 4</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Home 5</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Kid</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Men</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Most popular</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Sandals</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Shoes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Sunglasses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Trending</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Uncategorized</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="price mt-3">
+                <h6 style="margin-top:30px;">Filter by price</h6>
+                <div class="mt-4 menu-price">
+                    <center>
+                        <div class="price-range " style="width:95%">
+                            <input id="minamount" class="position-absolute" value="0" type="text" name="">
+                            <span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default"
+                                  style="left: 0%;">
+                        <input id="min-count" disabled="disabled" class="position-absolute" type="text"
+                               name="price_min"/>
+                      </span>
+                            <span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default"
+                                  style="left: 59.992%;">
+                        <input id="max-count" disabled="disabled" class="position-absolute" type="text"
+                               name="price_max"/>
+                      </span>
+                        </div>
+                    </center>
+                </div>
+            </div>
+            <div class="color" style="margin-top: 72px;">
+                <h6 style="padding-top:30px;">Filter by color</h6>
+                <div class="mt-4 menu-color">
+                    <div>
+                        <input type="radio" id="color-1" name="color" value="color-1">
+                        <label for="color-1">
+                          <span>
+                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg"
+                                 alt="Checked Icon"/>
+                          </span>
+                        </label>
+                    </div>
+                    <div>
+                        <input type="radio" id="color-2" name="color" value="color-2">
+                        <label for="color-2">
+                          <span>
+                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg"
+                                 alt="Checked Icon"/>
+                          </span>
+                        </label>
+                    </div>
+                    <div>
+                        <input type="radio" id="color-3" name="color" value="color-3">
+                        <label for="color-3">
+                          <span>
+                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg"
+                                 alt="Checked Icon"/>
+                          </span>
+                        </label>
+                    </div>
+                    <div>
+                        <input type="radio" id="color-4" name="color" value="color-4">
+                        <label for="color-4">
+                          <span>
+                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg"
+                                 alt="Checked Icon"/>
+                          </span>
+                        </label>
+                    </div>
+                    <div>
+                        <input type="radio" id="color-5" name="color" value="color-5">
+                        <label for="color-5">
+                          <span>
+                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg"
+                                 alt="Checked Icon"/>
+                          </span>
+                        </label>
+                    </div>
+                    <div>
+                        <input type="radio" id="color-6" name="color" value="color-6">
+                        <label for="color-6">
+                          <span>
+                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg"
+                                 alt="Checked Icon"/>
+                          </span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="size mt-3">
+                <h6 style="padding-top:30px;">Filter by size</h6>
+                <ul class="navbar-nav menu-size mt-4">
+                    <li>
+                        <input type="checkbox" id="size-S" value="S">
+                        <label for="size-S">S</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="size-M" value="M">
+                        <label for="size-M">M</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="size-L" value="L">
+                        <label for="size-L">L</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="size-XL" value="XL">
+                        <label for="size-XL">XL</label>
+                    </li>
+                </ul>
+            </div>
+            <div class="tag mt-3">
+                <h6 style="padding-top:30px;">Tags</h6>
+                <ul class="navbar-nav menu-tag mt-4">
+                    <li>
+                        <input type="checkbox" id="checkboxOne" value="Shose">
+                        <label for="checkboxOne">Shose</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" checked="checked" id="checkboxTwo" value="Bag">
+                        <label for="checkboxTwo">Bag</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="checkboxThree" value="Hat">
+                        <label for="checkboxThree">Hat</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="checkboxFour" value="XL">
+                        <label for="checkboxFour">XL</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="checkboxFive" value="ice">
+                        <label for="checkboxFive">ice</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="checkboxSix" value="Knitted ">
+                        <label for="checkboxFive">Knitted </label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="checkboxSeven" value="M">
+                        <label for="checkboxFive">M</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="checkboxEight" value="Beanie">
+                        <label for="checkboxFive">Beanie</label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-xl-9 col-lg-8 shop-product">
+            <div class="d-flex mt-4 mt-xl-0 flex-md-row flex-column justify-content-between align-items-md-end mb-4">
+                <span class="mb-3 mb-xl-0">Showing 1–12 of 77 results</span>
+                <select class="form-select form-select-lg" aria-label=".form-select-lg example">
+                    <option selected>Sort by</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+            </div>
+            <div class="shop-carousel owl-carousel owl-theme">
+                <div class="item ">
+                    <div class="image position-relative">
+                        <div class="label-sale position-absolute">
+                            <span class="product-sale">Sale</span>
+                        </div>
+                        <a href="product.html">
+                            <img src="./images/Rectangle 6.png" alt="">
+                        </a>
+                        <ul class="social d-none position-absolute">
+                            <li class="add-cart mr-2">
+                                <a href="" data-tip="Add to Cart">
+                                    <i class="bi bi-cart"></i>
+                                </a>
+                            </li>
+                            <button onclick="location.href='product.html'" type="button" class="btn btn-buy">BUY NOW
+                            </button>
+                        </ul>
+                    </div>
+                    <a style="color:#262627;font-weight: 600;" href="product.html">
+                        <h6 style="margin-top: 30px;">Beanie Yellow</h6>
+                    </a>
+                    <p class="item-price"><span>$45.00</span></p>
+                    <ul class="rating">
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <span>(256)</span>
+                    </ul>
+                </div>
+                <div class="item">
+                    <div class="image position-relative">
+                        <div class="label-outofstock position-absolute">
+                            <span class="product-outofstock">Out of stock</span>
+                        </div>
+                        <a href="product.html">
+                            <img src="./images/Rectangle 7.png" alt="">
+                        </a>
+                        <ul class="social d-none position-absolute">
+                            <li class="add-cart mr-2">
+                                <a href="" data-tip="Add to Cart">
+                                    <i class="bi bi-cart"></i>
+                                </a>
+                            </li>
+                            <button onclick="location.href='product.html'" type="button" class="btn btn-buy">BUY NOW
+                            </button>
+                        </ul>
+                    </div>
+                    <a style="color:#262627;font-weight: 600;" href="product.html">
+                        <h6 style="margin-top: 30px;">Knitted Polo Shirt</h6>
+                    </a>
+                    <p class="item-price"><span>$100.00</span></p>
+                    <ul class="rating">
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <span>(256)</span>
+                    </ul>
+                </div>
+                <div class="item">
+                    <div class="image position-relative">
+                        <a href="product.html">
+                            <img src="./images/Rectangle 8.png" alt="">
+                        </a>
+                        <ul class="social d-none position-absolute">
+                            <li class="add-cart mr-2">
+                                <a href="" data-tip="Add to Cart">
+                                    <i class="bi bi-cart"></i>
+                                </a>
+                            </li>
+                            <button onclick="location.href='product.html'" type="button" class="btn btn-buy">BUY NOW
+                            </button>
+                        </ul>
+                    </div>
+                    <a style="color:#262627;font-weight: 600;" href="product.html">
+                        <h6 style="margin-top: 30px;">Nike X Off - White </h6>
+                    </a>
+                    <p class="item-price"><span>$100.00</span></p>
+                    <ul class="rating">
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <span>(256)</span>
+                    </ul>
+                </div>
+            </div>
+            <div class="shop-carousel owl-carousel owl-theme">
+                <div class="item">
+                    <div class="image position-relative">
+                        <a href="product.html">
+                            <img src="./images/Rectangle 10.png" alt="">
+                        </a>
+                        <ul class="social d-none position-absolute">
+                            <li class="add-cart mr-2">
+                                <a href="" data-tip="Add to Cart">
+                                    <i class="bi bi-cart"></i>
+                                </a>
+                            </li>
+                            <button onclick="location.href='product.html'" type="button" class="btn btn-buy">BUY NOW
+                            </button>
+                        </ul>
+                    </div>
+                    <a style="color:#262627;font-weight: 600;" href="product.html">
+                        <h6 style="margin-top: 30px;">Beanie Yellow</h6>
+                    </a>
+                    <p class="item-price"><span class="mr-2">$45.00</span><strike>$40.00</strike></p>
+                    <ul class="rating">
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <span>(256)</span>
+                    </ul>
+                </div>
+                <div class="item">
+                    <div class="image position-relative">
+                        <a href="product.html">
+                            <img src="./images/Rectangle 11.png" alt="">
+                        </a>
+                        <ul class="social d-none position-absolute">
+                            <li class="add-cart mr-2">
+                                <a href="" data-tip="Add to Cart">
+                                    <i class="bi bi-cart"></i>
+                                </a>
+                            </li>
+                            <button onclick="location.href='product.html'" type="button" class="btn btn-buy">BUY NOW
+                            </button>
+                        </ul>
+                    </div>
+                    <a style="color:#262627;font-weight: 600;" href="product.html">
+                        <h6 style="margin-top: 30px;">Knitted Polo Shirt</h6>
+                    </a>
+                    <p class="item-price"><span>$100.00</span></p>
+                    <ul class="rating">
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <span>(256)</span>
+                    </ul>
+                </div>
+                <div class="item">
+                    <div class="image position-relative">
+                        <a href="product.html">
+                            <img src="./images/Rectangle 12.png" alt="">
+                        </a>
+                        <ul class="social d-none position-absolute">
+                            <li class="add-cart mr-2">
+                                <a href="" data-tip="Add to Cart">
+                                    <i class="bi bi-cart"></i>
+                                </a>
+                            </li>
+                            <button onclick="location.href='product.html'" type="button" class="btn btn-buy">BUY NOW
+                            </button>
+                        </ul>
+                    </div>
+                    <a style="color:#262627;font-weight: 600;" href="product.html">
+                        <h6 style="margin-top: 30px;">Nike X Off - White </h6>
+                    </a>
+                    <p class="item-price"><span>$100.00</span></p>
+                    <ul class="rating">
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <span>(256)</span>
+                    </ul>
+                </div>
+            </div>
+            <div class="shop-carousel owl-carousel owl-theme">
+                <div class="item">
+                    <div class="image position-relative">
+                        <div class="label-sale position-absolute">
+                            <span class="product-sale">Sale</span>
+                        </div>
+                        <a href="product.html">
+                            <img src="./images/Rectangle 28.png" alt="">
+                        </a>
+                        <ul class="social d-none position-absolute">
+                            <li class="add-cart mr-2">
+                                <a href="" data-tip="Add to Cart">
+                                    <i class="bi bi-cart"></i>
+                                </a>
+                            </li>
+                            <button onclick="location.href='product.html'" type="button" class="btn btn-buy">BUY NOW
+                            </button>
+                        </ul>
+                    </div>
+                    <a style="color:#262627;font-weight: 600;" href="product.html">
+                        <h6 style="margin-top: 30px;">Beanie Yellow</h6>
+                    </a>
+                    <p class="item-price"><span class="mr-2">$45.00</span></p>
+                    <ul class="rating">
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <span>(256)</span>
+                    </ul>
+                </div>
+                <div class="item">
+                    <div class="image position-relative">
+                        <div class="label-outofstock position-absolute">
+                            <span class="product-outofstock">Out of stock</span>
+                        </div>
+                        <a href="product.html">
+                            <img src="./images/Rectangle 29.png" alt="">
+                        </a>
+                        <ul class="social d-none position-absolute">
+                            <li class="add-cart mr-2">
+                                <a href="" data-tip="Add to Cart">
+                                    <i class="bi bi-cart"></i>
+                                </a>
+                            </li>
+                            <button onclick="location.href='product.html'" type="button" class="btn btn-buy">BUY NOW
+                            </button>
+                        </ul>
+                    </div>
+                    <a style="color:#262627;font-weight: 600;" href="product.html">
+                        <h6 style="margin-top: 30px;">Knitted Polo Shirt</h6>
+                    </a>
+                    <p class="item-price"><span>$100.00</span></p>
+                    <ul class="rating">
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <span>(256)</span>
+                    </ul>
+                </div>
+                <div class="item">
+                    <div class="image position-relative">
+                        <a href="product.html">
+                            <img src="./images/Rectangle 12.png" alt="">
+                        </a>
+                        <ul class="social d-none position-absolute">
+                            <li class="add-cart mr-2">
+                                <a href="" data-tip="Add to Cart">
+                                    <i class="bi bi-cart"></i>
+                                </a>
+                            </li>
+                            <button onclick="location.href='product.html'" type="button" class="btn btn-buy">BUY NOW
+                            </button>
+                        </ul>
+                    </div>
+                    <a style="color:#262627;font-weight: 600;" href="product.html">
+                        <h6 style="margin-top: 30px;">Nike X Off - White </h6>
+                    </a>
+                    <p class="item-price"><span>$100.00</span></p>
+                    <ul class="rating">
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <span>(256)</span>
+                    </ul>
+                </div>
+            </div>
+            <div class="shop-carousel owl-carousel owl-theme">
+                <div class="item">
+                    <div class="image position-relative">
+                        <a href="product.html">
+                            <img src="./images/Rectangle 30.png" alt="">
+                        </a>
+                        <ul class="social d-none position-absolute">
+                            <li class="add-cart mr-2">
+                                <a href="" data-tip="Add to Cart">
+                                    <i class="bi bi-cart"></i>
+                                </a>
+                            </li>
+                            <button onclick="location.href='product.html'" type="button" class="btn btn-buy">BUY NOW
+                            </button>
+                        </ul>
+                    </div>
+                    <a style="color:#262627;font-weight: 600;" href="product.html">
+                        <h6 style="margin-top: 30px;">Beanie Yellow</h6>
+                    </a>
+                    <p class="item-price"><span class="mr-2">$45.00</span><strike>$40.00</strike></p>
+                    <ul class="rating">
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <span>(256)</span>
+                    </ul>
+                </div>
+                <div class="item">
+                    <div class="image position-relative">
+                        <a href="product.html">
+                            <img src="./images/Rectangle 11.png" alt="">
+                        </a>
+                        <ul class="social d-none position-absolute">
+                            <li class="add-cart mr-2">
+                                <a href="" data-tip="Add to Cart">
+                                    <i class="bi bi-cart"></i>
+                                </a>
+                            </li>
+                            <button onclick="location.href='product.html'" type="button" class="btn btn-buy">BUY NOW
+                            </button>
+                        </ul>
+                    </div>
+                    <a style="color:#262627;font-weight: 600;" href="product.html">
+                        <h6 style="margin-top: 30px;">Knitted Polo Shirt</h6>
+                    </a>
+                    <p class="item-price"><span>$100.00</span></p>
+                    <ul class="rating">
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <span>(256)</span>
+                    </ul>
+                </div>
+                <div class="item">
+                    <div class="image position-relative">
+                        <a href="product.html">
+                            <img src="./images/Rectangle 31.png" alt="">
+                        </a>
+                        <ul class="social d-none position-absolute">
+                            <li class="add-cart mr-2">
+                                <a href="" data-tip="Add to Cart">
+                                    <i class="bi bi-cart"></i>
+                                </a>
+                            </li>
+                            <button onclick="location.href='product.html'" type="button" class="btn btn-buy">BUY NOW
+                            </button>
+                        </ul>
+                    </div>
+                    <a style="color:#262627;font-weight: 600;" href="product.html">
+                        <h6 style="margin-top: 30px;">Nike X Off - White </h6>
+                    </a>
+                    <p class="item-price"><span>$100.00</span></p>
+                    <ul class="rating">
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <span>(256)</span>
+                    </ul>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <button onclick="location.href=''" type="button" class="btn btn-load">Load More</button>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="footer position-relative d-flex  flex-column align-items-center"
+        style="color:#262627;margin-top:165px;justify-content: flex-end;background: #F7F7F8">
+    <div class="container p-0 footer-content" style="margin-top: 115px;margin-bottom: 48px;">
+        <div class="row">
+            <div class="col-12 col-lg-3 h-75">
+                <div class="logo-footer">
+                    <a href="./index.html" class="navbar-brand">
+                        <img src="./images/logo.svg" alt=""/>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-5 col-12 h-75 quick-links">
+                <div class="row">
+                    <div class="col-6 address">
+                        <ul class="pl-4 pl-md-0" style="white-space: normal;list-style: none;">
+                            <span>Contact us</span>
+                            <li style="padding-top: 5px;display: flex;">
+                                <i style="color:#637381" class="bi bi-geo-alt mr-3"></i>
+                                <span>184 Main Rd E, St Albans, VIC 3021, Australia</span>
+                            </li>
+                            <li>
+                                <i style="color:#637381" class="bi bi-telephone mr-3"></i>
+                                <span>+0123456789</span>
+                            </li>
+                            <li style="white-space: nowrap;">
+                                <i style="color:#637381" class="far fa-envelope mr-3"></i>
+                                <span>contact@woncep.com</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-6">
+                        <ul class="nav flex-column pages pl-5">
+                            <span>Quick link</span>
+                            <li class="nav-item">
+                                <a class="" target="_blank" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="" href="" target="_blank" aria-current="page">Menu</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="" href="" target="_blank" aria-current="page">Brand</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="" href="./contact.html" target="_blank" aria-current="page">Contact us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="" href="./blog.html" target="_blank" aria-current="page">Blog</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-12">
+                <p class="pl-4 pl-md-0" style="padding-top:32px;line-height: 32px;">
+                    Sign up to get exclusive promotions and early access to flash sales!
+                </p>
+                <div deepsel-form-data="1" class="input-group">
+                    <input deepsel-form-input-email type="text" class="form-control" placeholder="Your email address"
+                           aria-label="Your email address" aria-describedby="basic-addon2">
+                    <button deepsel-form-submit class="btn input-group-text" id="basic-addon2">SUBCRIBE</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" style="height: 106px;border: 1px solid #E7E7E7;">
+        <div class="container" style="color: #20313B;display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: inherit;">
+            <span>© 2021 woncep. ALL RIGHTS RESERVED</span>
+            <ul class="nav justify-content-md-start justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link" target="_blank" aria-current="page" href="https://www.youtube.com"
+                       style="color: #20313B"><i class="fab fa-youtube"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://twitter.com" target="_blank" aria-current="page"
+                       style="color:#20313B"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.linkedin.com" target="_blank" aria-current="page"
+                       style="color:#20313B"><i class="fab fa-linkedin-in"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.instagram.com" target="_blank" aria-current="page"
+                       style="color:#20313B"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.facebook.com" target="_blank" aria-current="page"
+                       style="color:#20313B"><i class="fab fa-facebook-square"></i></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://s3.ap-east-1.amazonaws.com/cdn.deepsel.com/A-plugin/jquery-3.5.1.min.js.gz"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+<script src="https://s3.ap-east-1.amazonaws.com/cdn.deepsel.com/A-plugin/jquery-ui.min.js.gz"></script>
+<script src="./js/owlcarousel/owl.carousel.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+<script src="./js/home.js"></script>
+<script src="./js/shop.js"></script>
+</body>
+
+</html>

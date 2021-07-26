@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="shortcut icon" type="image/png" href="./images/logo.svg"/>
+    <meta name="og:type" content="website"/>
+    <meta name="twitter:card" content="photo"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"/>
+    <link rel="stylesheet" type="text/css" href="css/home.css"/>
+    <link rel="stylesheet" type="text/css" href="css/blog.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./js/owlcarousel/assets/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="./js/owlcarousel/assets/owl.theme.default.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"/>
+    <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.deepsel.com/A-plugin/jquery-ui.min.css.gz"/>
+    <link rel="stylesheet"
+          href="https://cdn.rawgit.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+          integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>Blog</title>
+</head>
+
+<body>
+<header class="bg-white sticky-top w-100">
+    <div class="container logo-header">
+        <div class="row">
+            <nav class="navbar navbar-expand-xl text-white w-100 justify-content-between ml-md-auto p-0">
+                <a href="./index.html" class="navbar-brand text-white d-flex align-items-center"><img
+                        src="./images/logo.svg" alt=""/>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="bx bx-menu-alt-right"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarHeader">
+                    <ul deepsel-menu class=" h-100 navbar-nav ml-auto align-items-start align-items-xl-center">
+                        <li deepsel-menu-item class="nav-item home active h-100">
+                            <a deepsel-menu-item-link class="nav-link h-100 d-flex"
+                               style="font-weight: 600;color:#B55E36" href="./index.html">
+                                <span deepsel-menu-item-text>Home</span>
+                            </a>
+                        </li>
+                        <li deepsel-menu-item class="nav-item shop-menu dropdown h-100">
+                            <a deepsel-menu-item-link class="nav-link h-100 d-flex"
+                               onclick="location.href='./shop.html'" href="" id="navbarDropdown" role="button"
+                               data-toggle="dropdown">
+                                <span deepsel-menu-item-text>Shop</span>
+                                <i deepsel-menu-item-icon class="bi bi-chevron-down ml-1"></i>
+                            </a>
+                            <div deepsel-menu-item-child class="dropdown-menu">
+                                <ul class="navbar-nav flex-column">JACKETS
+                                    <li>
+                                        <a class="dropdown-item" href="">Parkas</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="">Work Jackets</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="">Trench Coats</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="">Casual</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="">Sale</a>
+                                    </li>
+                                </ul>
+                                <ul class="navbar-nav flex-column">SHIRTS
+                                    <li>
+                                        <a class="dropdown-item" href="">Knits</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="">Mid-Layers</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="">Standard</a>
+                                    </li>
+                                    <li class="dropdown-submenu position-relative">
+                                        <a class="dropdown-item" href="">Granddad
+                                            <i class="bi bi-chevron-down ml-1"></i>
+                                        </a>
+                                        <ul class="navbar-nav dropdown-small position-absolute d-none"
+                                            style="padding-left:1.2rem;list-style: initial;">
+                                            <li>
+                                                <a class="dropdown-item" href="">Shirts 1</a>
+                                            </li>
+                                            <li class="dropdown-submenu">
+                                                <a class="dropdown-item" href="">Shirts 2
+                                                    <i class="bi bi-chevron-down ml-1"></i>
+                                                </a>
+                                                <ul class="navbar-nav dropdown-small position-absolute d-none">
+                                                    <li>
+                                                        <a class="dropdown-item" href="">Demi</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="">T-Shirts</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class="navbar-nav flex-column">TROUSERS
+                                    <li>
+                                        <a class="dropdown-item" href="">Slim</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="">Proper</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="">Standard</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="">Shorts</a>
+                                    </li>
+                                    <li>
+                                </ul>
+                                <ul class="navbar-nav flex-column">SHORTS
+                                    <li>
+                                        <a class="dropdown-item" href="">Gloves</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="">Opticals</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="">Scarves</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="">Hats</a>
+                                    </li>
+                                </ul>
+                                <ul class="navbar-nav flex-column">CATEGORIES
+                                    <li class="mt-2"><img src="./images/Rectangle 36.png" alt=""></li>
+                                    <li class="mt-2"><a class="dropdown-item" href="">Men’s Essentials</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item page-menu dropdown h-100">
+                            <a class="nav-link h-100 d-flex" onclick="location.href='./shop.html'" href="">
+                                Page
+                                <i class="bi bi-chevron-down ml-1"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item blog-menu h-100">
+                            <a class="nav-link  h-100 d-flex" href="./blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item contact-menu h-100">
+                            <a class="nav-link h-100 d-flex" href="./contact.html">Contact us</a>
+                        </li>
+                    </ul>
+                    <ul class="h-100 navbar-nav align-items-start align-items-xl-center">
+                        <li class="nav-item h-100 dropdown user-menu">
+                            <a class="nav-link h-100 d-flex" type="button" id="dropdownUser" data-toggle="dropdown"
+                               aria-haspopup="true" aria-expanded="false" href="#">
+                                <i class="bi bi-person"></i>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownUser">
+                                <li>
+                                    <a class="dropdown-item" href="">LOGIN</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="">SIGN UP</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="h-100 navbar-nav align-items-start align-items-xl-center">
+                        <li class="nav-item h-100 dropdown cart-menu">
+                            <a class="nav-link h-100 d-flex" type="button" id="dropdownCart" data-toggle="dropdown"
+                               aria-haspopup="true" aria-expanded="false" href="./shop.html">
+                                <i class="bi bi-cart position-relative" style="font-size: 19px;">
+                          <span class="badge d-flex position-absolute bg-main">0
+                          </span>
+                                </i>
+                            </a>
+                            <div deepsel-multi-product-cart class="cart dropdown-menu container"
+                                 aria-labelledby="dropdownCart">
+                                <h2>Your cart</h2>
+                                <center>
+                                    <hr style="width:88%">
+                                </center>
+                                <div deepsel-single-product class="product row">
+                                    <div deepsel-product-url class="product-image col-xl-4">
+                                        <img deepsel-product-image src="./images/Rectangle 26.png">
+                                    </div>
+                                    <div class="product-details col-xl-8">
+                                        <h3 deepsel-product-name class="product-name">Trucker Jacket Denmin</h3>
+                                        <label deepsel-product-cart-qty class="product-quantity">Qty: 1</label>
+                                        <div class="d-flex justify-content-between align-items-end">
+                                            <span deepsel-product-price class="product-price">$100.00</span>
+                                            <a deepsel-remove-from-cart class="remove-product">
+                                                Remove
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <center>
+                                    <hr style="width: 88%;">
+                                </center>
+                                <div deepsel-single-product class="product row">
+                                    <div deepsel-product-url class="product-image col-xl-4">
+                                        <img deepsel-product-image src="./images/Rectangle 27.png">
+                                    </div>
+                                    <div class="product-details col-xl-8">
+                                        <h3 deepsel-product-name class="product-name">Nike X Off - White</h3>
+                                        <label deepsel-product-cart-qty class="product-quantity">Qty: 1</label>
+                                        <div class="d-flex justify-content-between align-items-end">
+                                            <span deepsel-product-price class="product-price">$100.00</span>
+                                            <a deepsel-remove-from-cart class="remove-product">
+                                                Remove
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <center>
+                                    <hr style="width:88%">
+                                </center>
+                                <div class="totals">
+                                    <div class="totals-item">
+                                        <label>Subtotal</label>
+                                        <span deepsel-product-cart-subtotal class="totals-value" id="cart-subtotal">$200.00</span>
+                                    </div>
+                                    <!--                          <div class="totals-item">-->
+                                    <!--                            <label>Delivery</label>-->
+                                    <!--                            <div class="totals-value" id="cart-shipping">$0.00</div>-->
+                                    <!--                          </div>-->
+                                    <div class="totals-item">
+                                        <label>Discount</label>
+                                        <div deepsel-product-cart-discount class="totals-value" id="cart-discount">
+                                            -0%
+                                        </div>
+                                    </div>
+                                    <center>
+                                        <hr style="width:95%">
+                                    </center>
+                                    <div class="totals-item totals-money">
+                                        <label>Total</label>
+                                        <div deepsel-product-cart-total class="totals-value" id="cart-total">
+                                            $200.00
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="checkout button-group d-flex justify-content-between">
+                                    <button onclick="location.href='shop/cart'" type="button"
+                                            class="btn btn-view btn-outline-warning">VIEW CART
+                                    </button>
+                                    <button onclick="location.href='shop/payment'" type="button"
+                                            class="btn btn-checkout btn-outline-warning">CHECK OUT
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="h-100 navbar-nav align-items-start align-items-xl-center">
+                        <li class="h-100 nav-item d-none d-xl-block search-menu">
+                            <a type="button" href="" class="h-100 nav-link" id="search">
+                                <i class="bi bi-search"></i>
+                            </a>
+                            <div class="search-form p-0 d-none dropdown-menu " id="search-drop">
+                                <div class="input-group">
+                                    <input deepsel-search type="text" onkeyup="inputFunc()" id="myInput"
+                                           class="form-control" placeholder="Search for something"
+                                           aria-label="Example text with button addon"
+                                           aria-describedby="search"/>
+                                    <button class="btn input-group-text" id="remove">
+                                        <i class="bi bi-x"></i>
+                                    </button>
+                                </div>
+                                <ul class="list-group" id="myList">
+                                    <li class="list-group-item">Contact</li>
+                                    <li class="list-group-item">short</li>
+                                    <li class="list-group-item">jean</li>
+                                    <li class="list-group-item">hat 2021</li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                    <div deepsel-lang-switcher class="currency-menu d-flex align-items-center dropdown">
+                        <a deepsel-lang-current id="currencyDropdown" data-toggle="dropdown" aria-haspopup="false"
+                           aria-expanded="false" class="nav-link mr-2"
+                           style="color: #000000;" href="">
+                            USD <i class="bi bi-caret-down-fill" style="font-size: 10px;"></i>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="currencyDropdown">
+                            <center deepsel-lang-option><a deepsel-lang-text class="dropdown-item" href="#">VND</a>
+                            </center>
+                            <center deepsel-lang-option><a deepsel-lang-text class="dropdown-item" href="#">NDT</a>
+                            </center>
+                        </div>
+                    </div>
+                    <div class="container-fluid input-group search-form-mobile p-0 d-flex d-xl-none">
+                        <div class="input-group-prepend">
+                            <button class="btn" id="search-mobile">
+                                <i class="bi bi-search"></i>
+                            </button>
+                        </div>
+                        <input deepsel-search type="text" class="form-control" placeholder="Search"
+                               aria-label="Example text with button addon" aria-describedby="search"/>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+<div class="container blog-container">
+    <div class="row">
+        <div class="col-xl-8 blog-content">
+            <div deepsel-multi-blog>
+                <div deepsel-single-blog class="row">
+                    <a deepsel-blog-url href="./blog.html">
+                        <img deepsel-blog-image src="./images/image 15.png" class="w-100" alt=""/>
+                    </a>
+                    <div class="w-100 d-flex">
+                        <div>
+                            <div class="bg-label">
+                                <div class="label">
+                                    <p class="m-0">CLOTHES</p>
+                                </div>
+                            </div>
+                            <div class="bg-label" style="margin-left:12px">
+                                <div class="label">
+                                    <p class="m-0">MEN</p>
+                                </div>
+                            </div>
+                        </div>
+                        <span deepsel-blog-date class="d-flex align-items-center" style="margin-left:12px;
+                    color: #637381;">December 21, 2020</span>
+                    </div>
+                    <h2 deepsel-blog-title class="blog-title">Meet the Former Model Designing Couture-Level Accessories
+                        in Paris
+                    </h2>
+                    <p deepsel-blog-subtitle style="color:#637381">Aenean eleifend ante maecenas pulvinar montes lorem
+                        et pede dis dolor
+                        pretium
+                        donec dictum.
+                        Vici consequat justo enim. Venenatis eget adipiscing luctus lorem. Adipiscing veni amet luctus
+                        enim sem libero tellus viverra venenatis aliquam. Commodo natoque quam pulvinar elit.
+                    </p>
+                </div>
+                <div class="row" style="margin:70px 0;border:1px solid #E7E7E7"></div>
+                <div deepsel-single-blog class="row">
+                    <a deepsel-blog-url href="./blog.html">
+                        <img deepsel-blog-image src="./images/image 16.png" class="w-100" alt=""/>
+                    </a>
+                    <div class="w-100 d-flex">
+                        <div deepsel-multi-tag>
+                            <div class="bg-label">
+                                <div class="label">
+                                    <p deepsel-tag class="m-0">CLOTHES</p>
+                                </div>
+                            </div>
+                            <div class="bg-label" style="margin-left:12px">
+                                <div class="label">
+                                    <p deepsel-tag class="m-0">MEN</p>
+                                </div>
+                            </div>
+                        </div>
+                        <span deepsel-blog-date class="d-flex align-items-center" style="margin-left:12px;
+                    color: #637381;">December 21, 2020</span>
+                    </div>
+                    <h2 deepsel-blog-title class="blog-tittle">How to Dress Like a Model on Vacation, From Bella Hadid
+                        to Emily Ratajkowski
+                    </h2>
+                    <p deepsel-blog-subtitle style="color:#637381">Aenean eleifend ante maecenas pulvinar montes lorem
+                        et pede dis dolor
+                        pretium
+                        donec dictum.
+                        Vici consequat justo enim. Venenatis eget adipiscing luctus lorem. Adipiscing veni amet luctus
+                        enim
+                        sem libero tellus viverra venenatis aliquam. Commodo natoque quam pulvinar elit.
+                    </p>
+                </div>
+                <div class="row" style="margin:70px 0;border:1px solid #E7E7E7"></div>
+                <div deepsel-single-blog class="row">
+                    <a deepsel-blog-url href="./blog.html">
+                        <img deepsel-blog-image src="./images/image 17.png" class="w-100" alt=""/>
+                    </a>
+                    <div class="w-100 d-flex">
+                        <div>
+                            <div class="bg-label">
+                                <div class="label">
+                                    <p class="m-0">CLOTHES</p>
+                                </div>
+                            </div>
+                            <div class="bg-label" style="margin-left:12px">
+                                <div class="label">
+                                    <p class="m-0">MEN</p>
+                                </div>
+                            </div>
+                        </div>
+                        <span deepsel-blog-date class="d-flex align-items-center" style="margin-left:12px;
+                    color: #637381;">December 21, 2020</span>
+                    </div>
+                    <h2 deepsel-blog-title class="blog-tittle">Meet the Former Model Designing Couture-Level Accessories
+                        in Paris
+                    </h2>
+                    <p deepsel-blog-subtitle style="color:#637381">Aenean eleifend ante maecenas pulvinar montes lorem
+                        et pede dis dolor
+                        pretium
+                        donec dictum.
+                        Vici consequat justo enim. Venenatis eget adipiscing luctus lorem. Adipiscing veni amet luctus
+                        enim sem libero tellus viverra venenatis aliquam. Commodo natoque quam pulvinar elit.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <button onclick="location.href=''" type="button" class="btn btn-load">Load More</button>
+            </div>
+        </div>
+        <div class="col-xl-4 side-bar">
+            <div class="search-bar">
+                <h6 style="padding-top:30px;">Search</h6>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search" aria-label="Username"
+                           aria-describedby="basic-addon1">
+                    <div class="input-group-prepend">
+                        <button class="btn" id="search-blog">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="categories" style="margin-top:26px;padding:26px 0 0 0;border-top:1px solid #E7E7E7;">
+                <h6 style="margin:0">Blog categories</h6>
+                <ul class="navbar-nav flex-column cate-menu">
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Slim
+                            <span>(1)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Proper
+                            <span>(79)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Standard
+                            <span>(53)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Shorts
+                            <span>(2573)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Gloves
+                            <span>(36)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Opticals
+                            <span>(538)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link"> Scarves
+                            <span>(5)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Hats
+                            <span>(578)</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="blog-tags" style="margin-top:26px;padding:26px 0 0 0;border-top:1px solid #E7E7E7;">
+                <h6 style="margin:0">Blog tags</h6>
+                <ul class="navbar-nav flex-row cate-menu">
+                    <li class="nav-item mr-2">
+                        <a href="" class="nav-link" style="color:#637381">#Fashion
+                        </a>
+                    </li>
+                    <li class="nav-item mr-2">
+                        <a href="" class="nav-link" style="color:#637381">#Men's
+                        </a>
+                    </li>
+                    <li class="nav-item mr-2">
+                        <a href="" class="nav-link" style="color:#637381">#Style
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="latest-posts" style="margin-top:26px;padding:26px 0 0 0;border-top:1px solid #E7E7E7;">
+                <h6 style="margin:0">Latest posts</h6>
+                <div deepsel-multi-blog>
+                    <div deepsel-single-blog class="d-flex mt-4">
+                        <a deepsel-blog-url href="./blog.html">
+                            <img deepsel-blog-image class="mr-4" src="./images/Rectangle 32.png" height="111" alt="">
+                        </a>
+                        <div class="d-flex flex-column justify-content-between">
+                            <a deepsel-blog-url href="./blog.html" style="text-decoration: none">
+                                <p deepsel-blog-title class="m-0" style="font-weight: 600;color: #262627;">
+                                    Meet the Former Model Designing Couture-Level Accessories in Paris
+                                </p>
+                            </a>
+                            <span deepsel-blog-date style="font-size: 12px;margin-bottom: 10px;
+                            line-height: 30px;color: #637381;">December 21, 2020</span>
+                        </div>
+                    </div>
+                    <div deepsel-single-blog class="d-flex mt-4">
+                        <a deepsel-blog-url href="./blog.html">
+                            <img deepsel-blog-image class="mr-4" src="./images/Rectangle 33.png" height="111" alt="">
+                        </a>
+                        <div class="d-flex flex-column justify-content-between">
+                            <a deepsel-blog-url href="./blog.html" style="text-decoration: none">
+                                <p deepsel-blog-title class="m-0" style="font-weight: 600;color: #262627;">
+                                    Only Lauryn Hill Could Make a Big Tulle Skirt and Cowboy Hat Work Together
+                                </p>
+                            </a>
+                            <span deepsel-blog-date style="font-size: 12px;margin-bottom: 10px;
+                        line-height: 30px;color: #637381;">December 27, 2020</span>
+                        </div>
+                    </div>
+                    <div deepsel-single-blog class="d-flex mt-4">
+                        <a deepsel-blog-url href="./blog.html">
+                            <img deepsel-blog-image class="mr-4" src="./images/Rectangle 34.png" height="111" alt="">
+                        </a>
+                        <div class="d-flex flex-column justify-content-between">
+                            <a deepsel-blog-url href="./blog.html" style="text-decoration: none">
+                                <p deepsel-blog-title class="m-0" style="font-weight: 600;color: #262627;">
+                                    A Novel Idea: This Summer’s Best Sun Hats Are Supersized
+                                </p>
+                            </a>
+                            <span deepsel-blog-date style="font-size: 12px;margin-bottom: 10px;
+                        line-height: 30px;color: #637381;">December 21, 2020</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="footer position-relative d-flex  flex-column align-items-center"
+        style="color:#262627;margin-top:165px;justify-content: flex-end;background: #F7F7F8">
+    <div class="container p-0 footer-content" style="margin-top: 115px;margin-bottom: 48px;">
+        <div class="row">
+            <div class="col-12 col-lg-3 h-75">
+                <div class="logo-footer">
+                    <a href="./index.html" class="navbar-brand">
+                        <img src="./images/logo.svg" alt=""/>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-5 col-12 h-75 quick-links">
+                <div class="row">
+                    <div class="col-6 address">
+                        <ul class="pl-4 pl-md-0" style="white-space: normal;list-style: none;">
+                            <span>Contact us</span>
+                            <li style="padding-top: 5px;display: flex;">
+                                <i style="color:#637381" class="bi bi-geo-alt mr-3"></i>
+                                <span>184 Main Rd E, St Albans, VIC 3021, Australia</span>
+                            </li>
+                            <li>
+                                <i style="color:#637381" class="bi bi-telephone mr-3"></i>
+                                <span>+0123456789</span>
+                            </li>
+                            <li style="white-space: nowrap;">
+                                <i style="color:#637381" class="far fa-envelope mr-3"></i>
+                                <span>contact@woncep.com</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-6">
+                        <ul class="nav flex-column pages pl-5">
+                            <span>Quick link</span>
+                            <li class="nav-item">
+                                <a class="" target="_blank" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="" href="" target="_blank" aria-current="page">Menu</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="" href="" target="_blank" aria-current="page">Brand</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="" href="./contact.html" target="_blank" aria-current="page">Contact us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="" href="./blog.html" target="_blank" aria-current="page">Blog</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-12">
+                <p class="pl-4 pl-md-0" style="padding-top:32px;line-height: 32px;">
+                    Sign up to get exclusive promotions and early access to flash sales!
+                </p>
+                <div deepsel-form-data="1" class="input-group">
+                    <input deepsel-form-input-email type="text" class="form-control" placeholder="Your email address"
+                           aria-label="Your email address" aria-describedby="basic-addon2">
+                    <button deepsel-form-submit class="btn input-group-text" id="basic-addon2">SUBCRIBE</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" style="height: 106px;border: 1px solid #E7E7E7;">
+        <div class="container" style="color: #20313B;display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: inherit;">
+            <span>© 2021 woncep. ALL RIGHTS RESERVED</span>
+            <ul class="nav justify-content-md-start justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link" target="_blank" aria-current="page" href="https://www.youtube.com"
+                       style="color: #20313B"><i class="fab fa-youtube"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://twitter.com" target="_blank" aria-current="page"
+                       style="color:#20313B"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.linkedin.com" target="_blank" aria-current="page"
+                       style="color:#20313B"><i class="fab fa-linkedin-in"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.instagram.com" target="_blank" aria-current="page"
+                       style="color:#20313B"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.facebook.com" target="_blank" aria-current="page"
+                       style="color:#20313B"><i class="fab fa-facebook-square"></i></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://s3.ap-east-1.amazonaws.com/cdn.deepsel.com/A-plugin/jquery-3.5.1.min.js.gz"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+<script src="https://s3.ap-east-1.amazonaws.com/cdn.deepsel.com/A-plugin/jquery-ui.min.js.gz"></script>
+<script src="./js/owlcarousel/owl.carousel.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+<script src="./js/home.js"></script>
+<script src="./js/blog.js"></script>
+</body>
+
+</html>
