@@ -1,0 +1,22 @@
+.top-blog-1 {
+    background-image: url(../images/1_uUvWlILBe4ZNqJrBa01Hkg.jpeg);
+    height: 476px;
+    width: 100%;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.top-blog-2 {
+    background-image: url(../images/0_1AWu40GfjiXPF8qm.jpeg);
+    height: 476px;
+    width: 100%;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.blog-content h3{
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #0B0742;
+}

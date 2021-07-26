@@ -1,0 +1,101 @@
+.ibox .form-control:focus {
+  box-shadow: none;
+  border: 1px solid #5E72EB;
+}
+
+.ibox .form-control {
+  border: 1px solid #C0C5CD;
+  border-radius: 0;
+  font-size: 16px;
+  color: #2C2862;
+}
+
+.ibox .form-control::-webkit-input-placeholder {
+  color: #C0C5CD;
+}
+
+.ibox .btn {
+  border-radius: 0;
+  background: #5E72EB;
+  color: #FFFFFF;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 18px;
+  padding: 1.063rem 1.579rem;
+}
+
+@media screen and (min-width: 320px) {
+  .ibox {
+    margin-top: 15px;
+  }
+  .ibox h1 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2C2862;
+  }
+  .map .address {
+    position: absolute;
+    top: 143px;
+    background: #2C2862;
+    left: 0;
+  }
+  .map .address > ul, .map .address .networks {
+    padding: 15px;
+  }
+  .map .address .networks .nav-link {
+    padding: 0.5rem 2rem 0.5rem 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .map .address {
+    position: absolute;
+    top: 192px;
+    background: #2C2862;
+    left: 166px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .ibox {
+    margin-top: 78px;
+  }
+  .ibox h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #2C2862;
+  }
+  .map .address {
+    position: absolute;
+    top: 192px;
+    background: #2C2862;
+    left: 435px;
+  }
+  .map .address > ul, .map .address .networks {
+    padding: 15px;
+  }
+  .map .address .networks .nav-link {
+    padding: 0.5rem 2rem 0.5rem 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .map .address {
+    left: 696px;
+    top: 143px;
+  }
+  .map .address > ul {
+    padding: 50px 50px 0 50px;
+  }
+  .map .address .networks {
+    padding: 50px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .map .address {
+    left: 982px;
+    top: 143px;
+  }
+}
+/*# sourceMappingURL=contact.css.map */
